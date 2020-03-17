@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.logo {
+  height: 32px;
+  background: rgb(150, 108, 108);
+  margin: 16px;
+}
+.site-layout .site-layout-background {
+  background: white;
+}
+  [data-theme="dark"] .site-layout .site-layout-background {
+    background: #141414;
+  }
+  .dynamic-delete-button {
+    cursor: pointer;
+    position: relative;
+    top: 4px;
+    font-size: 24px;
+    color: #f44242;
+    transition: all 0.3s;
+  }
+  .dynamic-delete-button:hover {
+    color: #f44242;
+  }
+  .dynamic-delete-button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+    [data-theme="dark"] .dynamic-delete-button {
+      color: rgba(255,255,255,.45);
+    }
+    [data-theme="dark"] .dynamic-delete-button:hover {
+      color: rgba(255,255,255,.65);
+    }
+  
